@@ -1,4 +1,4 @@
-﻿using Tyuiu.MolkovIS.Sprint3.Task0.V11.Lib;
+﻿using Tyuiu.MolkovIs.Sprint3.Task1.V5.Lib;
 
 internal class Program
 {
@@ -7,11 +7,10 @@ internal class Program
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
         Console.WriteLine("***************************************************************************");
-        DataService dataService = new DataService();
+        DS dataService = new DS();
         Console.Write("Введите начало: "); int start = Convert.ToInt32(Console.ReadLine());
-        int n = 5;
         Console.Write("Введите конец: "); int end = Convert.ToInt32(Console.ReadLine());
-        double res = dataService.GetSumSeries(n, start, end);
+        double res = dataService.GetMultiplySeries(start, end);
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
         Console.WriteLine("***************************************************************************");
