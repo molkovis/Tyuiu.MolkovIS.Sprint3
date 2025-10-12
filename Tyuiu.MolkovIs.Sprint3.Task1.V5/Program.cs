@@ -9,6 +9,7 @@ internal class Program
         Console.WriteLine("***************************************************************************");
         DS dataService = new DS();
         Console.Write("Введите начало: "); int start = Convert.ToInt32(Console.ReadLine());
+
         Console.Write("Введите конец: "); int end = Convert.ToInt32(Console.ReadLine());
         double res = dataService.GetMultiplySeries(start, end);
         Console.WriteLine("***************************************************************************");
